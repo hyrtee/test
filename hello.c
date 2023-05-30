@@ -1,10 +1,9 @@
 #include <stdio.h>
-
-void print() {
-	printf("hello world\n");
+#include <hello.h>
+void print(int a) {
+	printf("hello world, %d\n", &a);
 }
 int main() {
-	int a = 2;
-	print();
+	print(a);
 	return 0;
 }
